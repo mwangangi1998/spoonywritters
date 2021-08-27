@@ -155,7 +155,38 @@ h3{
   font-family: 'Bree Serif', serif; 
   color: #ddd;
   font-size: 1.2em;
-  background-color: black;
+  background-color: rgb(32, 133, 106);
   border: 1px solid white;
   
+}
+.footer{
+  margin-bottom: -20px;
+  background: #075a19;
+
+}
+#footer{
+  font-size: medium;
+  color:#fff;
+}
+#btn-1{
+  border-radius: 19px ;
+
+
+}
+.social-links ,i{
+padding-bottom: 5px;
+padding-left: auto ;
+color: #ddd;
+margin-left: 50px;
+font-size: 0.5rem;
+}
+.follow-us{
+  list-style: none;
+  padding: 5px;
+  border-radius: 12px;
+  display: inline-flex;
+}
+#fter{
+  color: black;
+ 
 }

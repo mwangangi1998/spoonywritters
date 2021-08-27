@@ -56,10 +56,10 @@ table td{
     <td><?php echo $row['npage']; ?></td>
     <td><?php echo $row['ordertime']; ?></td>
     <td><?php echo $row['txtarea']; ?></td>
-    <td><?php echo $row['totalPrice']; ?></td>
+    <td><?php echo "$",$row['totalPrice']; ?></td>
     <td><?php echo $row['size']/1000 . "KB"; ?></td>
     <td>
-   <a href="../tamplates/order/uploads/<?=$row['name']?>">Download</a> 
+   <a href="../tamplates/order/uploads/<?=$row['attach']?>">Download</a> 
     </td>
     </tr>
 <?php }?>

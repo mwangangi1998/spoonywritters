@@ -10,7 +10,7 @@
 
 <div class="topnav" id="myTopnav">
 	<h1>Spoony<span>Writters</span></h1>
-  <a href="/spoonywritters/tamplates/ordernow.php" class="active">Order now!</a>
+  <a href="/spoonywritters/tamplates/order/ordernow.php" class="active">Order now!</a>
   <a href="#Essay ">Essay for sale</a>
   <a href="/spoonywritters/tamplates/conductus.html" target="_blank">Contact us</a>
   <a href="/spoonywritters/tamplates/blog/blog.html">Blog</a>
@@ -41,7 +41,7 @@
 
 
 <div class="header">
-  <h2 class="papers">Check our our Catalogue</h2>
+  <h2 class="papers">Check  our Catalogue</h2>
   <div class="header-right">
   <a href="#"  >ESSAY</a>
   <a href="#">RESEARCH PAPER</a>
@@ -89,7 +89,40 @@ function myFunction() {
 }
 </script>
 
+<div class="footer">
 
+  <p id="footer"><b style="color:black;">Hire A+ witter and get 15 % off Now</b> <button id="btn-1"><a href="/spoonywritters/tamplates/order/ordernow.php" >Order now!</a></a></button>  </p>
+ 
+  <div class="social-links">
+     <p>Follow us </p>
+        <div class="follow-us">
+            <a href="#" ></a>
+        </div>
+          <div class="follow-us">
+         
+            <a href="#"> <i class="fa fa-facebook-square fa-3x"></i></a>
+          </div>
+          <div class="follow-us">
+             
+            <a href="#"><i class="fa fa-linkedin-square fa-3x"></i></a>
+          </div>
+            <div class="follow-us">
+           
+              <a href="#"> <i class="fa fa-instagram fa-3x"></i></a>
+            </div>
+            <div class="follow-us">
+              <a href="#"><i class="fa fa-twitter-square fa-3x"></i> </a>
+                    
+             </div>
+  </div>
+
+
+  </div>
+  <hr>
+      <p id="fter">&copy 2021 <br>spoonywritters.com. 
+      </p>
+
+</div>
 
 </body>
 </html>

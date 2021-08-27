@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+*{
+   
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins","sans-serif";
+
+}
+body{
+    display: flex;
+    justify-content:center; 
+    align-items: center;
+    margin:0;
+    height: 100vh;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    
+
+}
+body.dark{
+    background-color:#11101d;
+}
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.label-1{
+    display: flex;
+    width: 50px;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    justify-content: space-between;
+    border-radius: 50px;
+    background-color: #111;
+}
+.ball{
+    background-color: #fff;
+    height: 22px;
+    position: absolute;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    width: 22px;
+    transition: transform 0.2s linear;
+}
+.checkbox:checked + .label-1 .ball{
+    transform: translateX(24px);
+    background-color: purple;
+}
+.fa-moon{ 
+    color: #f1c40f;
+}
+.fa-sun{
+    color: #f39c12;
+}
+.logo_name{
+    font-size: larger;
+    color:#fff;
+    font-weight: bolder;
+}
+#logo{
+    color: rgb(25, 22, 221);
+}
+.inpt{
+    font-size: 21px;
+    color: rgb(17, 20, 173);
+    padding: 12px;
+}

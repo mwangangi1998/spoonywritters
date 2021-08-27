@@ -54,5 +54,7 @@ var ordertime_price= new Array();
 	function hideTotal()
 {
     var obj = document.getElementById('totalPrice');
-    obj.style.display='none';
+    obj.style.display='block';
 }
+
+

@@ -7,7 +7,8 @@ create table ordertable(
     npage int(50) NOT NULL,
     ordertime varchar(255) NOT NULL,
     txtarea text(255) NOT NULL,
-    totalPrice text(255) NOT NULL,
+    totalPrice DECIMAL(15,2) NOT NULL,
     attach varchar(100) NOT NULL,
+    size int(255)NOT NULL,
     PRIMARY KEY (Id)
   );

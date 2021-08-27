@@ -1,6 +1,6 @@
-<?php
+<?session_start();
 
-require "orderpre.php";
+
 
 
 ?>
@@ -34,22 +34,7 @@ require "orderpre.php";
     .logo  span{
     color: blue;
     }
-    .menubar ul{
-        list-style: none;
-        display: flex;
-       
-    }
-    .menubar ul li{
-        margin: 15px;
-    }
-    .menubar ul li a{
-        color: white;
-    }
-    .menubar ul li a:hover{
-        color: coral;
-       
-
-    }
+    
    label{
        font-size:20px;
     }
@@ -79,12 +64,8 @@ require "orderpre.php";
         font-weight: 70px;
         font-size: 20px;
     }
-    .instructions{
-       
-        rows:8;
-    }
-    #totalPrice
-{
+    
+    #totalPrice{
     text-align:center;
     color:blue;
     margin:12px;
@@ -112,16 +93,11 @@ require "orderpre.php";
     }
 
     
-</style>
+</style><span class="error"><?php echo $textareaError?></span>
 <body hideTotal()>
     <div class="mainpage">
         <label  class="logo">Spoony<span>Writers</span></label> 
-        <div class="menubar">
-     <ul>
-         <li><a href="/spoonywritters/tamplates/order/order.php" >ORDER NOW!</a></li>
-         <li><a href="/spoonywritters/tamplates/conductus.html">CONDUCTUS</a></li>
-    </ul>
-        </div>
+       
     </div>
         <div class="headtag">
            
@@ -150,16 +126,16 @@ require "orderpre.php";
                         
 
              </select><br>
-             <span class="error"><?php echo $levelError ;?></span></br>
+             </br>
                <label for="format"> SELECT  FORMAT:</label>
-                  <select name="fmart" id="fmart" required>
-                        <option  value=" Format" disabled=disabled ></option>
+                  <select name="fmart" required id="fmart" >
+                        <option  value=" "> </option>
                         <option>APA</option>
                         <option>CHICAGO</option>
                         <option>HARVARD</option>
                         <option>MLA</option>
                         <option>Other</option>
-                </select><br><span class="error"><?php echo $fmartError?></span><br>
+                </select><br><br>
                
                <label for="subject">Subject</label >
                      <select name="subject"  required id="subject"  onchange="calculateTotal()">
@@ -169,7 +145,7 @@ require "orderpre.php";
                         <option >Creative Writing</option>
                         <option>Kiswahili</option>
                         <option>IT & Computer Science</option>
-                        <option value="">Law</option>
+                        <option>Law</option>
                         <option>History</option>
                         <option >Accounting, Finance, $ SPSS</option>
                         <option>Chemistry</option>
@@ -183,12 +159,13 @@ require "orderpre.php";
                         <option >Business and Marketing</option>
                         <option>Religion &Theology</option>
                         <option></option>
-                 </select><br><span class="error"><?php echo $subjectError?></span></br>
+                 </select><br></br>
                  <label for="pages">Number of pages </label>
             <input type="number" placeholder="1 page is appoximate 250 word"  
-            name="npage" required id="npage"  onchange="getPages()"  min="1" /><br></br>
+            name="npage" required id="npage"  oninput="getPages()" onchange="getPages()" min="1" /><br></br>
               <label >Date on which the paper should be submitted.</label>
               <select name="ordertime" required id="ordertime"  onchange=" calculateTotal()">
+              <option value=""> </option>
               <option value="2hours"> within 2 hours</option>
               <option value="3hours">within 3  hours</option>
               <option value="4hours"> within 4 hours</option>
@@ -207,12 +184,12 @@ require "orderpre.php";
               <option value="2wks">within  2 weeks time </option>
               <option value="others"> others  </option>
               
-              </select><br><span class="error"><?php echo $ordertimeError?></span></br>
+              </select><br></br>
              
         
                 <div class="instructions">
                     <label for="instructions">Enter Topic of the task. </label> 
-                        <textarea maxlength="100 characters "   rows="5"   
+                        <textarea maxlength="300 "   rows="5"   
                                 cols="30" id="txtarea"  reqired name="txtarea" >
                                 
                         </textarea>
@@ -224,15 +201,19 @@ require "orderpre.php";
                     <input type="file" id="docpic" accept=".doc, .docx, .pdf , .jpg , .png" name="attach" >
                     <span class="error"><?php echo $attachError?></span>                 
                 </div>
-                 <div id="totalPrice" name="totalPrice">  <span class="error"><?php echo $totalPriceError?></span></div>
-                 <input type="hidden" name="totalPrice" id="totalPrice" />
+                <div id="totalPrice" name="totalPrice">
+                    
+                <!--<input type="hidden" name="totalPrice" id="totalPrice"/>-->
+            </div>
+           
                 
                  
-                <input type="submit" value="submit" name="submit" id="submit" onclick="getFormData()" >
+                <input type="submit" value="submit" name="submit" id="submit"  >
             
          
         </fieldset>
      </form>
+     
  </div>
     
 <hr>

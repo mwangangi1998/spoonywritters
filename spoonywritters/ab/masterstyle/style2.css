@@ -1,37 +1,96 @@
-.form-table
-{
-    width:350px;
-    margin-left: auto;
-    margin-right: auto;
+/*google fonts */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins","sans-serif";
+
 }
- 
-label{
-    font-weight: bold;
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden; 
 }
- 
-#form_submission_ajax{
-    background-color: #eee;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.sidebar{
+    position: fixed;
+    top: 0; 
+    left: 0;
+    height: 100%;
+    width: 88px;
+    background-color: #11101d;
+    padding: 6px 14px;
+    transition: all 0.5s ease;
 }
- 
-.error{
-    color: #ff0000;
+.sidebar.active{
+    width: 240px;
 }
- 
-input {
-    border: 2px solid #531EBF;
-    padding: 4px;
+.sidebar .logo_content .logo{
+    color: rgb(224, 222, 228);
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    font-size: larger;
+    font-weight:bolder;
 }
- 
-input[type="submit"] {
-    padding: 5px 15px;
-    background-color: #531EBF;
-    border: 2px solid #531EBF;
+ #logo{
+    color: blue;
+}
+.sidebar #btn{  
+    position: absolute;
+    color: #fff; 
+    left: 90%;
+    top: 6%;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform:translateX(-50%);
+}
+.sidebar ul{
+    margin-top: 20px;
+}
+.sidebar ul li{
+  list-style: none;   
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin: 0 5px;
+}
+.sidebar ul li  input{
+    position: absolute;
+    height: 70%;
+    width: 70%;
+    left: 0;
+    top: 0;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background: #1d1b31;
     color: #fff;
-    border-radius: 5px;
-}
  
-h1 {
-    color: #531EBF;
 }
+.sidebar ul li a{
+    transform: all 0.4s ease;
+     color: #fff;
+     display: flex;
+     border-radius: 12px;
+     align-items: center;
+   text-decoration: none;
+}
+.sidebar ul li a:hover{
+    color: #7fff00;
+   
+}
+.sidebar ul li li i{
+    height: 50px;
+    min-width: 50px;
+    border-radius:12px;
+    line-height: 50px;
+    text-align: center;
+}
+

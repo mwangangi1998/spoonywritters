@@ -10,4 +10,4 @@ create table support(
 
 ---insert this values in the same table---
  INSERT INTO `support` (`Id`, `username`, `email`, 
- `password`) VALUES ('1', 'vinny12', 'mwangangimusyoka1998@gmail.com','vinny');
+ `password`) VALUES ('1', 'vinny12', 'mwangangimusyoka1998@gmail.com','$2y$10$TZ0cOeksujcdx1Phiss49e1p8N34eNKH.KVl5JuqoUMBXc2/yqkS.');
